@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Test</title>
+</head>
+<body>
+    <h1>Random Image</h1>
+    <img id="randomImage" style="max-width:100%;" alt="Random Image">
+    <button onclick="getRandomImage()">Get New Image</button>
+
+    <script>
+        const images = [
+            'https://drive.google.com/uc?export=view&id=1skptG2dipd111OFVhW2asN52jbK037Rc',
+            'https://drive.google.com/uc?export=view&id=1VK7kXCibfK1PRnTnGD_TPLSCRIXR3_4M',
+            'https://drive.google.com/uc?export=view&id=1uJd2bumDQZOl_SC5Ry2RV7RGYFIIgnJ3',
+            'https://drive.google.com/uc?export=view&id=1FCKQDSH6TXCRpPpG0ka9CZ8Xflga3XVu',
+            'https://drive.google.com/uc?export=view&id=1A5Js1tLId2IACrQ3KmQRywYLWHbecdwm',
+            'https://drive.google.com/uc?export=view&id=1lM6-Qbm-_WvcYlR9uyZzu5ZI1QK62aiG',
+            'https://drive.google.com/uc?export=view&id=1_mrbWyxdy5jju_b_2ETxuYaVlJA-LBun',
+            'https://drive.google.com/uc?export=view&id=1bUlGILDr1h65ZgtiybiRKqti6pKIKaj9',
+            'https://drive.google.com/uc?export=view&id=1UjOxd_XZw6oNUF2WV_YAy1ZFn5Zd2KwX',
+            'https://drive.google.com/uc?export=view&id=1cjpGsQHwfIcGqQI6vR2mO4CydnjsV3OO',
+            'https://drive.google.com/uc?export=view&id=11qAiKvsA_pbhqpF_96v0qtjcpZdeKApd',
+            'https://drive.google.com/uc?export=view&id=1Yn_IC5t-yIDju_mu0dmMlJScA3mc2rUQ',
+            'https://drive.google.com/uc?export=view&id=1CFU3otDovKnMmo-DSdvC3mUdC6FR6ipo',
+            'https://drive.google.com/uc?export=view&id=1DwLwAAbNTAqyO37NM-AWNUhLI5agk9QY',
+            'https://drive.google.com/uc?export=view&id=1lV338hbaVS6eO97RQ4lWze_rHlo5eQuo',
+            'https://drive.google.com/uc?export=view&id=1nzixJO4eoc6F18zoHtIO_9pilfpunqI0',
+            'https://drive.google.com/uc?export=view&id=1JDFtuP6qyPX0fZa4Wwe1Ykd29hmI7vY5',
+            'https://drive.google.com/uc?export=view&id=1Ij63YagFvS7Je8CsjC858M8c0UPgocXp',
+            'https://drive.google.com/uc?export=view&id=12MiEe2MUuooz8V75AjUrmjkNZZexqhoT',
+            'https://drive.google.com/uc?export=view&id=1EqODWvWchcYr5UUjxSHgkNmELwg2hadZ',
+            'https://drive.google.com/uc?export=view&id=1xowxCiTwKXkzocdSN87yssKeDFhyRWpp',
+            'https://drive.google.com/uc?export=view&id=1xWANrvsSekPssBxDc9GkSd133_bOtDGH',
+            'https://drive.google.com/uc?export=view&id=1ZgV75vKPlwEqs93AGbZS1dxLOlXHdB_I
+            // Add your image URLs here
+        ];
+
+        function getRandomImage() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            document.getElementById('randomImage').src = images[randomIndex];
+        }
+
+        // Load a random image when the page loads
+        window.onload = getRandomImage;
+    </script>
+</body>
+</html>
